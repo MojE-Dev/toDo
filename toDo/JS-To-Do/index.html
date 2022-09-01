@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>To Do List</title>
+  </head>
+  
+  <body>
+    <section
+      class="to-do-form-section container flex-row justify-content-center align-items-center"
+      id="to-do-section-form"
+    >
+        <div
+          class="flex-column justify-content-center align-items-center flex-row-gap-three background-color-white-color padding border-radius-8px"
+        >
+          <div class="flex-row justify-content-center align-items-center">
+            <h1 class="font-size-24 font-weight-600">Create New Item</h1>
+          </div>
+          <div
+            class="flex-column justify-content-center align-items-start flex-row-gap-one"
+          >
+            <label for="title-input" class="font-size-20 font-weight-500"
+              >Title</label
+            >
+            <input
+              type="text"
+              class="title-input"
+              placeholder="Enter New Title"
+              id="title-input"
+            />
+          </div>
+
+          <div
+            class="flex-column justify-content-center align-items-start flex-row-gap-one"
+          >
+            <label for="description-input" class="font-size-20 font-weight-500"
+              >Description</label
+            >
+            <textarea
+              class="description-input"
+              id="description-input"
+              placeholder="Enter New Description"
+            ></textarea>
+          </div>
+
+          <div class="flex-row justify-content-center align-items-center">
+            <button onclick="addNewItem()" class="btn-primary">Submit</button>
+          </div>
+        </div>
+      
+    </section>
+    <section class="to-do-items-section" id="to-do-sec"> 
+    </section>
+    <footer class="flex-row justify-content-end align-items-center padding-half">
+        <button onclick="inputFocus()" class="create-link-to-up" href="#to-do-section-form" >New Item</button >
+    </footer>
+
+
+
+<div class="back" id="pop-up">
+    <div class="empty-alert">
+        <p class="font-family font-size-20 font-weight-400 ">Please Enter Title Or Description</p>
+        <button onclick="closePopUp()" class="close-btn">Close</button>
+    </div>
+</div>
+
+
+<div class="back" id="edite-form">
+  <div
+  class="flex-column justify-content-center align-items-center flex-row-gap-three background-color-white-color padding border-radius-8px"
+>
+  <div class="flex-row justify-content-center align-items-center">
+    <h1 class="font-size-24 font-weight-600">Edite Item</h1>
+  </div>
+  <div
+    class="flex-column justify-content-center align-items-start flex-row-gap-one"
+  >
+    <label for="title-input" class="font-size-20 font-weight-500"
+      >Title</label
+    >
+    <input
+      type="text"
+      class="title-input"
+      placeholder="Enter Title"
+      id="edite-title-input"
+    />
+  </div>
+
+  <div
+    class="flex-column justify-content-center align-items-start flex-row-gap-one"
+  >
+    <label for="description-input" class="font-size-20 font-weight-500"
+      >Description</label
+    >
+    <textarea
+      class="description-input"
+      id="edite-description-input"
+      placeholder="Enter Description"
+    ></textarea>
+  </div>
+
+  <div class="flex-row justify-content-center align-items-center">
+    <button onclick="saveChange()" class="btn-primary">Edite</button>
+  </div>
+</div>
+</div>
+
+  </body>
+  <script src="./app.js"></script>
+</html>

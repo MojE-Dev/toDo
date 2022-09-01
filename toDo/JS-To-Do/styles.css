@@ -1,0 +1,51 @@
+@import url('./modules/reset.css');
+@import url('./modules/utils.css');
+@import url('./modules/components.css');
+ 
+.back{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+@keyframes fade-in {
+    0% {
+        filter: opacity(0%) ;
+        
+    }
+    100% {
+        filter: opacity(100%) ;
+    }
+   }
+   @keyframes fade-out {
+    0% {
+        filter: opacity(100%) ;
+        
+    }
+    100% {
+        filter: opacity(0%) ;
+    }
+   }
+.empty-alert{
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 8px;
+}
+.to-do-items-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 3rem;
+}

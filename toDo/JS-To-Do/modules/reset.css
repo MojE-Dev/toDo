@@ -1,0 +1,26 @@
+:root{
+    --primary-color: #CEC075;
+    --secondary-color: #CFC8B0;
+    --neutral-color: #9DA9A0;
+    --black-color: #252525;
+    --white-color: #FFFFFF;
+    --font-black-color: #181717;
+    --background-color: #F9F9F9;
+    --gray-color: #526581;
+    --gray-color: #7798806d;
+    --gray-color: #cec17575;
+    --more-gray-color: rgba(80, 80, 80, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans','Roboto' ;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
